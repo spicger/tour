@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,9 @@
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="img/svgs/site-logo.svg" type="image/x-icon">
 
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!--=============== BOOTSTRAP ===============-->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
 
@@ -17,29 +21,158 @@
     <link rel="stylesheet" href="styles/breakpoints.css">
     <title>Tour</title>
 </head>
+
 <body>
-    
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Menu</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="d-flex flex-column align-items-center row-gap-2">
+                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">Home</a></li>
+                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">Destinations</a>
+                        </li>
+                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">About</a></li>
+                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">Partner</a></li>
+                    </ul>
+                    <div class="nav-btns column-gap-3 mx-auto justify-content-center mt-3">
+                        <button type="button"
+                            class="btn border border-1 border-primary text-primary py-2 px-4 rounded-3">Login</button>
+                        <button type="button"
+                            class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-4 rounded-3">Register</button>
+                    </div>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--=============== HEADER ===============-->
     <header class="header">
         <div class="container">
-            <nav class="d-flex justify-content-between align-items-center mt-5">
-                <a href="#" class="text-primary fw-bold fs-4 d-flex align-items-center"><img src="./img/svgs/site-logo.svg" class="me-2" alt="">Tour</a>
+            <nav class="d-flex justify-content-between align-items-center mt-md-5 mt-sm-4 mt-3 pe-xl-5">
+                <a href="#" class="text-primary fw-bold fs-4 d-flex align-items-center"><img
+                        src="./img/svgs/site-logo.svg" class="me-2" alt="">Tour</a>
                 <div class="d-flex">
-                    <ul class="d-flex column-gap-4 align-items-center">
+                    <ul class="d-none d-md-flex column-gap-4 align-items-center">
                         <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">Home</a></li>
-                        <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">Destinations</a></li>
+                        <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">Destinations</a>
+                        </li>
                         <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">About</a></li>
                         <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">Partner</a></li>
                     </ul>
-                    <div class="d-flex column-gap-3 ms-4">
-                        <button type="button" class="btn border border-1 border-primary text-primary py-2 px-4 rounded-3">Login</button>
-                        <button type="button" class="btn btn-primary text-white bg-primary py-2 px-4 rounded-3">Register</button>
+                    <div class="d-flex nav-btns column-gap-3 ms-4">
+                        <button type="button"
+                            class="btn border border-1 border-primary text-primary py-2 px-4 rounded-3">Login</button>
+                        <button type="button"
+                            class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-4 rounded-3">Register</button>
                     </div>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="d-flex align-items-center justify-content-center d-md-none ms-2"><i
+                            class='bx bx-menu bx-sm text-primary'></i></button>
                 </div>
             </nav>
         </div>
     </header>
 
+    <!--=============== MAIN ===============-->
+    <main>
+        <!--=============== HEADER INTRO ===============-->
+        <section class="header-intro position-relative my-5 py-xl-4">
+            <div class="container">
+                <div class="row row-gap-4">
+                    <div class="col-xl-5 col-lg-6 col-12 order-1 order-lg-0">
+                        <div class="d-flex flex-column align-items-sm-start align-items-center justify-content-center justify-content-xl-start h-100 position-relative">
+                            <h4 class="fw-bold secondary-font display-4 title-color mb-4">Explore and
+                                Travel</h4>
+                            <h5 class="fs-5 fw-bolder mt-xl-5 mb-1">Holiday finder</h5>
+                            <div class="d-flex mt-3">
+                                <img src="img/svgs/blackLine.svg" alt="">
+                            </div>
+                            <form action="" class="mt-xl-5 mt-3 w-100">
+                                <div class="row row-gap-4 mb-xl-5 mb-4">
+                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
+                                            <option selected>Location</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
+                                            <option selected>Activity</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
+                                            <option selected>Grade</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
+                                            <option selected>Date</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center justify-content-sm-start">
+                                    <button type="submit" class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-5 rounded-3 w-max-content">Explore</button>
+                                </div>
+                            </form>
+                            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute end-0" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block"></div>
+                    <div class="col-xl-6 col-lg-6 col-12 order-0">
+                        <div class="d-flex">
+                            <img src="img/intro-img.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/svgs/greenCircle.svg" class="big-circle position-absolute d-sm-block d-none" alt="">
+            <img src="./img/svgs/greenCircle.svg" class="small-circle position-absolute d-sm-block d-none" alt="">
+        </section>
+
+        <!--=============== NEW WAY ===============-->
+        <section class="new-way my-5 py-xl-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7">
+                        <div class="d-flex">
+                            <img src="./img/new-way.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-1"></div>
+                    <div class="col-xl-4">
+                        <div class="flex-column d-flex align-items-sm-start align-items-center justify-content-center h-100">
+                            <h5 class="fs-2 fw-bold title-color secondary-font">A new way to explore the world </h5>
+                            <p class="fs-6 fw-normal thirdy-font mb-4 pb-lg-2 mt-3 pt-lg-1">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect 
+                                trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                            <button type="button" type="submit" class="btn btn-primary text-primary hvr-radial-out fw-600 fs-6 px-4">Learn more</button>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 
@@ -48,4 +181,5 @@
 
     <script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

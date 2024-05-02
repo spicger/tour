@@ -1,0 +1,14 @@
+@media (min-width:401px) {
+    .modal-dialog .nav-btns {
+        display: none !important;
+    }
+}
+
+@media (max-width:400px) {
+    .modal-dialog .nav-btns {
+        display: flex !important;
+    }
+    .nav-btns {
+        display: none !important;
+    }
+}
