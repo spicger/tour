@@ -90,7 +90,8 @@
             <div class="container">
                 <div class="row row-gap-4">
                     <div class="col-xl-5 col-lg-6 col-12 order-1 order-lg-0">
-                        <div class="d-flex flex-column align-items-sm-start align-items-center justify-content-center justify-content-xl-start h-100 position-relative">
+                        <div
+                            class="d-flex flex-column align-items-sm-start align-items-center justify-content-center justify-content-xl-start h-100 position-relative">
                             <h4 class="fw-bold secondary-font display-4 title-color mb-4">Explore and
                                 Travel</h4>
                             <h5 class="fs-5 fw-bolder mt-xl-5 mb-1">Holiday finder</h5>
@@ -100,32 +101,36 @@
                             <form action="" class="mt-xl-5 mt-3 w-100">
                                 <div class="row row-gap-4 mb-xl-5 mb-4">
                                     <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
-                                            <option selected>Location</option>
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
+                                            required>
+                                            <option value="" selected>Location</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
                                     <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
-                                            <option selected>Activity</option>
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
+                                            required>
+                                            <option value="" selected>Activity</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
                                     <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
-                                            <option selected>Grade</option>
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
+                                            required>
+                                            <option value="" selected>Grade</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
                                     <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example" required>
-                                            <option selected>Date</option>
+                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
+                                            required>
+                                            <option value="" selected>Date</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
@@ -133,7 +138,8 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <button type="submit" class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-5 rounded-3 w-max-content">Explore</button>
+                                    <button type="submit"
+                                        class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-5 rounded-3 w-max-content">Explore</button>
                                 </div>
                             </form>
                             <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute end-0" alt="">
@@ -154,20 +160,196 @@
         <!--=============== NEW WAY ===============-->
         <section class="new-way my-5 py-xl-4">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="d-flex">
+                <div class="row row-gap-4">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="d-flex position-relative">
                             <img src="./img/new-way.png" class="w-100" alt="">
+                            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute d-none d-sm-block"
+                                alt="">
                         </div>
                     </div>
-                    <div class="col-xl-1"></div>
-                    <div class="col-xl-4">
-                        <div class="flex-column d-flex align-items-sm-start align-items-center justify-content-center h-100">
+                    <div class="col-xl-1 d-none d-xl-block">
+                        <div class="position-relative">
+                            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute top-0" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div
+                            class="flex-column d-flex align-items-sm-start align-items-center justify-content-center h-100 position-relative">
                             <h5 class="fs-2 fw-bold title-color secondary-font">A new way to explore the world </h5>
-                            <p class="fs-6 fw-normal thirdy-font mb-4 pb-lg-2 mt-3 pt-lg-1">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect 
+                            <p class="fs-6 fw-normal thirdy-font text-center text-sm-start mb-4 pb-lg-2 mt-3 pt-lg-1">
+                                For decades travellers have reached for Lonely Planet books when looking to plan and
+                                execute their perfect
                                 trip, but now, they can also let Lonely Planet Experiences lead the way</p>
-                            <button type="button" type="submit" class="btn btn-primary text-primary hvr-radial-out fw-600 fs-6 px-4">Learn more</button>
-                        </div>      
+                            <button type="button" type="submit"
+                                class="btn btn-primary text-primary hvr-radial-out fw-600 fs-6 px-4">Learn more</button>
+                            <img src="./img/svgs/greenCircle.svg"
+                                class="small-circle position-absolute d-none d-lg-block" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Destination ===============-->
+        <section class="destination my-5 py-xl-4 position-relative">
+            <div class="container">
+                <div
+                    class="d-flex align-items-center justify-content-sm-between justify-content-center mb-5 pb-xl-3 position-relative">
+                    <img src="./img/svgs/greenCircle.svg" class="small-circle position-absolute d-sm-block d-none"
+                        alt="">
+                    <h5 class="fw-bold title-color secondary-font fs-1">Featured destinations</h5>
+                    <a href="#" class="fs-6 fw-600 d-flex align-items-center column-gap-2 d-none d-sm-block">View all <i
+                            class='bx bx-chevron-right text-primary'></i></a>
+                </div>
+                <div class="row row-gap-4">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="d-flex position-relative">
+                            <img class="destination-img w-100" src="img/destination-1.jpg" alt="">
+                            <div style="border-radius: 0 6px 0 0;"
+                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
+                                <h5 class="fs-6 fw-600 text-black">Raja Ampat </h5>
+                                <p class="fs-7 fw-500 text-gray">Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="d-flex position-relative">
+                            <img class="destination-img w-100" src="img/destination-2.jpg" alt="">
+                            <div style="border-radius: 0 6px 0 0;"
+                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
+                                <h5 class="fs-6 fw-600 text-black">Fanjingshan</h5>
+                                <p class="fs-7 fw-500 text-gray">China</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="d-flex position-relative">
+                            <img class="destination-img w-100" src="img/destination-3.jpg" alt="">
+                            <div style="border-radius: 0 6px 0 0;"
+                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
+                                <h5 class="fs-6 fw-600 text-black">Vevey</h5>
+                                <p class="fs-7 fw-500 text-gray">Switzerland</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="d-flex position-relative">
+                            <img class="destination-img w-100" src="img/destination-4.jpg" alt="">
+                            <div style="border-radius: 0 6px 0 0;"
+                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
+                                <h5 class="fs-6 fw-600 text-black">Skadar</h5>
+                                <p class="fs-7 fw-500 text-gray">Montenegro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex d-sm-none justify-content-center mt-4">
+                    <a href="#" class="fs-6 fw-600 d-flex align-items-center column-gap-2">View all <i
+                            class='bx bx-chevron-right text-primary'></i></a>
+                </div>
+            </div>
+            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute d-none d-sm-block" alt="">
+            <img src="./img/svgs/greenCircle.svg" class="small-circle position-absolute d-sm-block d-none" alt="">
+        </section>
+
+        <!--=============== Thousand ===============-->
+        <section class="thousand my-5 py-xl-4">
+            <div class="container">
+                <div class="row row-gap-4">
+                    <div class="col-xl-5 col-lg-6 order-1 order-lg-0">
+                        <div
+                            class="d-flex flex-column align-items-sm-start align-items-center justify-content-center h-100">
+                            <h5 class="secondary-font title-color fs-1 fw-bold">Guides by Thousand
+                                Sunny</h5>
+                            <p
+                                class="thirdy-font fw-light fs-6 text-gray text-center text-sm-start mt-3 pt-1 mb-4 pb-3">
+                                Packed with tips and
+                                advice from our on-the-ground
+                                experts, our city guides app
+                                (iOS and Android) is the ultimate resource before and during a trip.</p>
+                            <a href="bootstrap-5.3.3-dist.zip" download
+                                class="btn btn-primary text-primary hvr-radial-out fw-600 fs-6 bg-transparent px-4">Download</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block"></div>
+                    <div class="col-lg-6 order-0">
+                        <div class="d-flex">
+                            <img src="./img/thousand.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Testimonial ===============-->
+        <section class="testimonial my-5 py-xl-4">
+            <div class="container">
+                <h4 class="secondary-font fw-bold fs-1 text-sm-start text-center">Testimonials</h4>
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Stories ===============-->
+        <section class="stories my-5 py-xl-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-sm-between justify-content-center mb-5 pb-xl-3">
+                    <h5 class="fw-bold title-color secondary-font fs-1">Trending stories</h5>
+                    <a href="#" class="fs-6 fw-600 d-flex align-items-center column-gap-2 d-none d-sm-block">View all <i
+                            class="bx bx-chevron-right text-primary"></i></a>
+                </div>
+                <div class="row row-gap-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
+                            <div class="d-flex w-100 mb-3">
+                                <img src="img/stories-1.png" class="w-100" alt="">
+                            </div>
+                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">The many benefits of
+                                taking a healing holiday</h5>
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">‘Helaing holidays’ are on the rise
+                                tohelp maximise your health and happines...</p>
+                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
+                            <div class="d-flex w-100 mb-3">
+                                <img src="img/stories-2.png" class="w-100" alt="">
+                            </div>
+                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">The best Kyoto restaurant
+                                to try Japanese food</h5>
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
+                                to visit...</p>
+                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
+                            <div class="d-flex w-100 mb-3">
+                                <img src="img/stories-3.png" class="w-100" alt="">
+                            </div>
+                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">Skip Chichen Itza and head
+                                to this remote Yucatan</h5>
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">It’s remote and challenging to get,
+                                but braving the jungle and exploring
+                                these ruins without the...</p>
+                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
+                            <div class="d-flex w-100 mb-3">
+                                <img src="img/stories-4.png" class="w-100" alt="">
+                            </div>
+                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">Surf’s up at these beginner
+                                spots around the world</h5>
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">If learning to surf has in on your to-
+                                do list for a while, the good news
+                                is: it’s never too late...</p>
+                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>

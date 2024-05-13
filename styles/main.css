@@ -50,7 +50,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin-bottom: 0 !important;
 }
 
@@ -58,7 +59,11 @@ button {
     background-color: transparent !important;
 }
 
-/* Bootstrap tols */
+/* Bootstrap tools */
+.fs-7 {
+    font-size: 14px;
+}
+
 .title-color {
     color: var(--title-color);
 }
@@ -188,4 +193,38 @@ button {
     100% {
         transform: rotate(0);
     }
+}
+
+/* New Way */
+.new-way .plusAnimation {
+    top: initial;
+    bottom: 85px;
+    left: 17px;
+}
+
+.new-way .small-circle {
+    left: initial;
+    bottom: 33%;
+    right: 20%;
+}
+
+/* Destination */
+.destination .destination-img {
+    border-radius: 10px 10px 10px 0;
+}
+
+.destination .plusAnimation {
+    left: 20px;
+    top: 70%;
+}
+
+.destination .small-circle:nth-child(1) {
+    top: -30px;
+    right: 15%;
+    left: initial;
+}
+
+.destination .small-circle:nth-last-child(1) {
+    bottom: -40px;
+    left: 46%;
 }
