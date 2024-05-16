@@ -13,6 +13,9 @@
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!--=============== SWIPER ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!--=============== BOOTSTRAP ===============-->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
 
@@ -285,9 +288,71 @@
         <!--=============== Testimonial ===============-->
         <section class="testimonial my-5 py-xl-4">
             <div class="container">
-                <h4 class="secondary-font fw-bold fs-1 text-sm-start text-center">Testimonials</h4>
-                <div class="row">
-
+                <h4 class="secondary-font fw-bold fs-1 text-sm-start text-center mb-5">Testimonials</h4>
+                <div class="row row-gap-4">
+                    <div class="col-xl-5 col-lg-6 col-md-6">
+                        <div
+                            class="d-flex flex-column align-items-sm-start align-items-center justify-content-center h-100">
+                            <div class="d-flex column-gap-2">
+                                <i class='bx bxs-star bx-sm text-warning'></i>
+                                <i class='bx bxs-star bx-sm text-warning'></i>
+                                <i class='bx bxs-star bx-sm text-warning'></i>
+                                <i class='bx bxs-star bx-sm text-warning'></i>
+                                <i class='bx bxs-star bx-sm text-warning'></i>
+                            </div>
+                            <p class="thirdy-font fs-4 fw-normal text-black text-center text-sm-start my-lg-5 my-4">“Quisque in lacus a urna
+                                fermentum
+                                euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
+                                sit amet turpis nec”
+                            </p>
+                            <h4 class="fw-bold fs-22px text-black mb-1">Edward Newgate</h4>
+                            <p class="fw-normal text-black fs-18px">Founder Circle</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 d-none d-xl-block"></div>
+                    <div class="col-xl-5 col-lg-6 col-md-6">
+                        <div class="d-flex position-relative">
+                            <div class="swiper position-relative testimonialSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex object-fit-contain">
+                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex">
+                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex">
+                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex">
+                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex">
+                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="border-radius: 16px 0 0 0;width: 132px; height: 60px;" class="d-flex z-1 align-items-center justify-content-center bg-white rounded-top-right-1 position-absolute end-0 bottom-0">
+                                    <div class="swiper-button-next" style="top: 38px;">
+                                        <i class='bx bx-chevron-right'></i>
+                                    </div>
+                                    <div class="swiper-button-prev" style="top: 38px; left: 38px;">
+                                        <i class='bx bx-chevron-left'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./img/svgs/greenCircle.svg" class="big-circle position-absolute d-lg-block d-none z-n1" alt="">
+                            <img src="./img/svgs/plus.svg" class="plusAnimation z-1 position-absolute d-none d-lg-block" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -308,7 +373,8 @@
                             </div>
                             <h5 class="fw-bold fs-5 text-center text-sm-start title-color">The many benefits of
                                 taking a healing holiday</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">‘Helaing holidays’ are on the rise
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">‘Helaing holidays’
+                                are on the rise
                                 tohelp maximise your health and happines...</p>
                             <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
                         </div>
@@ -320,7 +386,8 @@
                             </div>
                             <h5 class="fw-bold fs-5 text-center text-sm-start title-color">The best Kyoto restaurant
                                 to try Japanese food</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">From tofu to
+                                teahouses, here’s our guide to Kyoto’s best restaurants
                                 to visit...</p>
                             <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
                         </div>
@@ -332,7 +399,8 @@
                             </div>
                             <h5 class="fw-bold fs-5 text-center text-sm-start title-color">Skip Chichen Itza and head
                                 to this remote Yucatan</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">It’s remote and challenging to get,
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">It’s remote and
+                                challenging to get,
                                 but braving the jungle and exploring
                                 these ruins without the...</p>
                             <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
@@ -345,7 +413,8 @@
                             </div>
                             <h5 class="fw-bold fs-5 text-center text-sm-start title-color">Surf’s up at these beginner
                                 spots around the world</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">If learning to surf has in on your to-
+                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">If learning to surf
+                                has in on your to-
                                 do list for a while, the good news
                                 is: it’s never too late...</p>
                             <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
@@ -360,8 +429,9 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
