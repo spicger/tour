@@ -15,6 +15,7 @@
 
 :root {
     --title-color: #202336;
+    --footer-text-color: #848484;
     --transition: .4s;
     --primary-font: 'Inter';
     --secondary-font: 'Playfair Display';
@@ -53,6 +54,10 @@ h5,
 h6,
 p {
     margin-bottom: 0 !important;
+}
+
+.footer-text-color {
+    color: var(--footer-text-color) !important;
 }
 
 button {
@@ -274,4 +279,17 @@ button {
     height: 32px;
     left: 7.5%;
     top: 96.1%;
+}
+
+/* footer */
+.footer {
+    background-color: #F9F9FB;
+    padding-top: 78px;
+    padding-bottom: 32px;
+}
+
+.footer hr {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    height: 3px;
 }
