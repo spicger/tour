@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== DESCRIPTION ===============-->
+    <meta name="description" content="Welcome to our Spotify ☺">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../img/svgs/favicon.svg" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+
+    <!--=============== STYLES ===============-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <link rel="stylesheet" href="../styles/breakpoints.css">
+    <title>Marico | Sign Up Page</title>
+</head>
+
+<body class="bg-black">
+
+    <!-- Modal -->
+    <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">Menu</h5>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="d-flex flex-column align-items-center column-gap-3">
+                <div class="nav-item-top dropdown">
+                    <a class="nav-link-sm d-flex fs-5 fw-500 transition primary-hover align-items-center text-white column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not pe-3"
+                        href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Use Cases
+                    </a>
+                    <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
+                        style="min-width: auto">
+
+                        <li>
+                            <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
+                        </li>
+                        <li>
+                            <a class="en dropdown-item dropdown-item-language" href="#">English</a>
+                        </li>
+                        <li>
+                            <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
+                        </li>
+                    </ul>
+                </div>
+                <li><a class="text-white fw-500 transition primary-hover fs-5" href="#">About</a></li>
+                <li><a class="text-white fw-500 transition primary-hover fs-5" href="#">Pricing</a></li>
+                <li><a class="text-white fw-500 transition primary-hover fs-5" href="#">Blog</a></li>
+            </ul>
+            <div class="d-flex justify-content-center align-items-center column-gap-2 row-gap-1 mt-4">
+                <a href="#" class="text-white transition primary-hover fw-500 fs-5">Login</a>
+                <a href="#" class="fs-5 fw-500 text-white btn btn-primary hvr-primary py-2 px-3">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="../index.html" class="site-logo"><img src="../img/svgs/site-logo.svg" alt=""></a>
+                    <ul class="d-lg-flex d-none align-items-center column-gap-3">
+                        <div class="nav-item-top dropdown">
+                            <a class="nav-link-sm d-flex fs-5 fw-500 transition primary-hover align-items-center text-secondary column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not pe-3"
+                                href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Use Cases
+                            </a>
+                            <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
+                                style="min-width: auto">
+
+                                <li>
+                                    <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
+                                </li>
+                                <li>
+                                    <a class="en dropdown-item dropdown-item-language" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">About</a></li>
+                        <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">Pricing</a></li>
+                        <li><a class="text-primary fw-500 transition primary-hover fs-5" href="#">Blog</a></li>
+                    </ul>
+                    <div class="d-sm-flex d-none align-items-center column-gap-3">
+                        <a href="#" class="text-secondary transition primary-hover fw-500 fs-5">Login</a>
+                        <a href="#" class="fs-5 fw-500 text-white btn btn-primary hvr-primary py-2 px-3">Sign Up</a>
+                    </div>
+                    <button class="btn btn-primary d-lg-none d-flex" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                            class='bx bx-menu-alt-left bx-sm text-primary'></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main>
+        <!--=============== HEADER INTRO ===============-->
+     
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

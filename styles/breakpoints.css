@@ -1,20 +1,139 @@
-@media (min-width:401px) {
-    .modal-dialog .nav-btns {
-        display: none !important;
+@media (max-width: 1399px) {
+
+    .intro-title,
+    .intro-title-liner {
+        font-size: 90px;
+    }
+   .helped {
+        font-size: 40px !important;
     }
 }
 
-@media (min-width: 1600px) {
-    .destination .plusAnimation {
-        left: 160px;
+@media (max-width: 1199px) {
+
+    .intro-title,
+    .intro-title-liner {
+        font-size: 79px;
     }
 }
 
-@media (max-width:400px) {
-    .modal-dialog .nav-btns {
+@media (max-width: 991px) {
+
+    .intro-title,
+    .intro-title-liner {
+        font-size: 58px;
+    }
+
+    .spot-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .intro-title,
+    .intro-title-liner {
+        font-size: 43px;
+    }
+
+    
+   .helped {
+        font-size: 30px !important;
+    }
+
+    .start {
+        font-size: 60px !important;
+    } 
+}
+
+@media (max-width: 575px) {
+
+    .intro-title,
+    .intro-title-liner {
+        font-size: 40px;
+    }
+
+
+    .expert {
+        font-size: 30px;
+    }
+
+    
+   .helped {
+        font-size: 18px !important;
+    }
+
+    .site-logo img {
+        width: 145px;
+    }
+
+    .spot-title {
+        font-size: 30px !important;
+    }
+
+    .spot-text {
+        font-size: 15px !important;
+    }
+
+    .spot-btn {
         display: flex !important;
+        flex-direction: column !important;
+        row-gap: 10px;
     }
-    .nav-btns {
-        display: none !important;
+
+
+    .spotify-text {
+        font-size: 40px;
+    }
+
+    .spotify-title {
+        font-size: 30px;
+    }
+
+    .black-title {
+        font-size: 30px !important;
+    }
+
+    .black-text {
+        font-size: 18px !important;
+    }
+
+    .connet {
+        font-size: 30px !important;
+    }
+    .help {
+        height: 500px !important;
+    }
+
+    .btm {
+        font-size: 20px !important;
+    }
+
+    .sub {
+        font-size: 23px !important;
+    }
+
+    .start {
+        font-size: 35px !important;
+    }
+
+    .take {
+        font-size: 25px !important;
+    }
+
+    .footer-bottom {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+
+    
+}
+
+@media (max-width: 1499px) {
+    .spot-boxxer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 }

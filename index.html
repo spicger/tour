@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--=============== DESCRIPTION ===============-->
-    <meta name="description" content="Explore and Travel with us 🤗">
+    <meta name="description" content="Welcome to our Spotify ☺">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="img/svgs/site-logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/svgs/favicon.svg" type="image/x-icon">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -22,473 +22,351 @@
     <!--=============== STYLES ===============-->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/breakpoints.css">
-    <title>Tour</title>
+    <title>Marico | Home Page</title>
 </head>
 
-<body>
+<body class="bg-black">
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Menu</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="d-flex flex-column align-items-center row-gap-2">
-                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">Home</a></li>
-                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">Destinations</a>
+    <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">Menu</h5>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="d-flex flex-column align-items-center column-gap-3">
+                <div class="nav-item-top dropdown">
+                    <a class="nav-link-sm d-flex fs-5 fw-500 transition primary-hover align-items-center text-white column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not pe-3"
+                        href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Use Cases
+                    </a>
+                    <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
+                        style="min-width: auto">
+
+                        <li>
+                            <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
                         </li>
-                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">About</a></li>
-                        <li><a class="text-secondary primary-hover transition fw-500 fs-5" href="#!">Partner</a></li>
+                        <li>
+                            <a class="en dropdown-item dropdown-item-language" href="#">English</a>
+                        </li>
+                        <li>
+                            <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
+                        </li>
                     </ul>
-                    <div class="nav-btns column-gap-3 mx-auto justify-content-center mt-3">
-                        <button type="button"
-                            class="btn border border-1 border-primary text-primary py-2 px-4 rounded-3">Login</button>
-                        <button type="button"
-                            class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-4 rounded-3">Register</button>
-                    </div>
                 </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                <li><a class="text-white fw-500 transition primary-hover fs-5" href="#">About</a></li>
+                <li><a class="text-white fw-500 transition primary-hover fs-5" href="#">Pricing</a></li>
+                <li><a class="text-white fw-500 transition primary-hover fs-5" href="#">Blog</a></li>
+            </ul>
+            <div class="d-flex justify-content-center align-items-center column-gap-2 row-gap-1 mt-4">
+                <a href="#" class="text-white transition primary-hover fw-500 fs-5">Login</a>
+                <a href="#" class="fs-5 fw-500 text-white btn btn-primary hvr-primary py-2 px-3">Sign Up</a>
             </div>
         </div>
     </div>
 
     <!--=============== HEADER ===============-->
     <header class="header">
-        <div class="container">
-            <nav class="d-flex justify-content-between align-items-center mt-md-5 mt-sm-4 mt-3 pe-xl-5">
-                <a href="#" class="text-primary fw-bold fs-4 d-flex align-items-center"><img
-                        src="./img/svgs/site-logo.svg" class="me-2" alt="">Tour</a>
-                <div class="d-flex">
-                    <ul class="d-none d-md-flex column-gap-4 align-items-center">
-                        <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">Home</a></li>
-                        <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">Destinations</a>
-                        </li>
-                        <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">About</a></li>
-                        <li><a href="#" class="text-secondary primary-hover transition fw-500 fs-6">Partner</a></li>
+        <nav class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="site-logo"><img src="./img/svgs/site-logo.svg" alt=""></a>
+                    <ul class="d-lg-flex d-none align-items-center column-gap-3">
+                        <div class="nav-item-top dropdown">
+                            <a class="nav-link-sm d-flex fs-5 fw-500 transition primary-hover align-items-center text-secondary column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not pe-3"
+                                href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Use Cases
+                            </a>
+                            <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
+                                style="min-width: auto">
+
+                                <li>
+                                    <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
+                                </li>
+                                <li>
+                                    <a class="en dropdown-item dropdown-item-language" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">About</a></li>
+                        <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">Pricing</a></li>
+                        <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">Blog</a></li>
                     </ul>
-                    <div class="d-flex nav-btns column-gap-3 ms-4">
-                        <button type="button"
-                            class="btn border border-1 border-primary text-primary py-2 px-4 rounded-3">Login</button>
-                        <button type="button"
-                            class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-4 rounded-3">Register</button>
+                    <div class="d-sm-flex d-none align-items-center column-gap-3">
+                        <a href="#" class="text-secondary transition primary-hover fw-500 fs-5">Login</a>
+                        <a href="pages/signup.html"
+                            class="fs-5 fw-500 text-white btn btn-primary hvr-primary py-2 px-3">Sign Up</a>
                     </div>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        class="d-flex align-items-center justify-content-center d-md-none ms-2"><i
-                            class='bx bx-menu bx-sm text-primary'></i></button>
+                    <button class="btn btn-primary d-lg-none d-flex" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                            class='bx bx-menu-alt-left bx-sm text-primary'></i></button>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <!--=============== MAIN ===============-->
     <main>
         <!--=============== HEADER INTRO ===============-->
-        <section class="header-intro position-relative my-5 py-xl-4">
+        <section class="header-intro mb-4 mb-md-5">
             <div class="container">
-                <div class="row row-gap-4">
-                    <div class="col-xl-5 col-lg-6 col-12 order-1 order-lg-0">
-                        <div
-                            class="d-flex flex-column align-items-sm-start align-items-center justify-content-center justify-content-xl-start h-100 position-relative">
-                            <h4 class="fw-bold secondary-font display-4 title-color mb-4">Explore and
-                                Travel</h4>
-                            <h5 class="fs-5 fw-bolder mt-xl-5 mb-1">Holiday finder</h5>
-                            <div class="d-flex mt-3">
-                                <img src="img/svgs/blackLine.svg" alt="">
-                            </div>
-                            <form action="" class="mt-xl-5 mt-3 w-100">
-                                <div class="row row-gap-4 mb-xl-5 mb-4">
-                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
-                                            required>
-                                            <option value="" selected>Location</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
-                                            required>
-                                            <option value="" selected>Activity</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
-                                            required>
-                                            <option value="" selected>Grade</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                        <select class="form-select fs-6 fw-normal" aria-label="Default select example"
-                                            required>
-                                            <option value="" selected>Date</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <button type="submit"
-                                        class="btn hvr-radial-out text-primary border border-1 border-primary bg-white py-2 px-5 rounded-3 w-max-content">Explore</button>
-                                </div>
-                            </form>
-                            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute end-0" alt="">
-                        </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h2 class="intro-title text-white fw-bold text-center mt-5">Own your audience.</h2>
+                    <h2 class="intro-title-liner fw-bold text-center mb-5">So you don't lose them.</h2>
+                    <p class="text-center fw-500 fs-1 text-white my-5 col-xxl-6">Turn your audience into email and
+                        text message subscribers.</p>
+                    <div class="d-flex align-items-center justify-content-center flex-wrap column-gap-3 row-gap-3 mb-4">
+                        <a href="#" class="btn btn-primary hvr-primary fw-500 fs-5 text-white py-3 px-5">Get Started
+                            Now</a>
+                        <a href="#" class="btn btn-secondary hvr-secondary fw-500 fs-5 text-secondary py-3 px-5">View A
+                            Demo</a>
                     </div>
-                    <div class="col-xl-1 d-none d-xl-block"></div>
-                    <div class="col-xl-6 col-lg-6 col-12 order-0">
-                        <div class="d-flex">
-                            <img src="img/intro-img.png" class="w-100" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./img/svgs/greenCircle.svg" class="big-circle position-absolute d-sm-block d-none" alt="">
-            <img src="./img/svgs/greenCircle.svg" class="small-circle position-absolute d-sm-block d-none" alt="">
-        </section>
-
-        <!--=============== NEW WAY ===============-->
-        <section class="new-way my-5 py-xl-4">
-            <div class="container">
-                <div class="row row-gap-4">
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="d-flex position-relative">
-                            <img src="./img/new-way.png" class="w-100" alt="">
-                            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute d-none d-sm-block"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-1 d-none d-xl-block">
-                        <div class="position-relative">
-                            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute top-0" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div
-                            class="flex-column d-flex align-items-sm-start align-items-center justify-content-center h-100 position-relative">
-                            <h5 class="fs-2 fw-bold title-color secondary-font">A new way to explore the world </h5>
-                            <p class="fs-6 fw-normal thirdy-font text-center text-sm-start mb-4 pb-lg-2 mt-3 pt-lg-1">
-                                For decades travellers have reached for Lonely Planet books when looking to plan and
-                                execute their perfect
-                                trip, but now, they can also let Lonely Planet Experiences lead the way</p>
-                            <button type="button" type="submit"
-                                class="btn btn-primary text-primary hvr-radial-out fw-600 fs-6 px-4">Learn more</button>
-                            <img src="./img/svgs/greenCircle.svg"
-                                class="small-circle position-absolute d-none d-lg-block" alt="">
-                        </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./img/svgs/green-dot.svg" alt="">
+                        <p class="d-flex align-items-center fw-normal fs-4 text-secondary"><span
+                                class="fs-4 text-white mx-2 fw-bold">1000+</span> creators have already started</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--=============== Destination ===============-->
-        <section class="destination my-5 py-xl-4 position-relative">
+        <section class="creators mt-5 pt-5">
             <div class="container">
-                <div
-                    class="d-flex align-items-center justify-content-sm-between justify-content-center mb-5 pb-xl-3 position-relative">
-                    <img src="./img/svgs/greenCircle.svg" class="small-circle position-absolute d-sm-block d-none"
-                        alt="">
-                    <h5 class="fw-bold title-color secondary-font fs-1">Featured destinations</h5>
-                    <a href="#" class="fs-6 fw-600 d-flex align-items-center column-gap-2 d-none d-sm-block">View all <i
-                            class='bx bx-chevron-right text-primary'></i></a>
+                <div class="d-flex justify-content-center">
+                    <h4 class=" connet text-white fs-8 text-center">Why Creators Love Marico</h4>
                 </div>
-                <div class="row row-gap-4">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="d-flex position-relative">
-                            <img class="destination-img w-100" src="img/destination-1.jpg" alt="">
-                            <div style="border-radius: 0 6px 0 0;"
-                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
-                                <h5 class="fs-6 fw-600 text-black">Raja Ampat </h5>
-                                <p class="fs-7 fw-500 text-gray">Indonesia</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="d-flex position-relative">
-                            <img class="destination-img w-100" src="img/destination-2.jpg" alt="">
-                            <div style="border-radius: 0 6px 0 0;"
-                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
-                                <h5 class="fs-6 fw-600 text-black">Fanjingshan</h5>
-                                <p class="fs-7 fw-500 text-gray">China</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="d-flex position-relative">
-                            <img class="destination-img w-100" src="img/destination-3.jpg" alt="">
-                            <div style="border-radius: 0 6px 0 0;"
-                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
-                                <h5 class="fs-6 fw-600 text-black">Vevey</h5>
-                                <p class="fs-7 fw-500 text-gray">Switzerland</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="d-flex position-relative">
-                            <img class="destination-img w-100" src="img/destination-4.jpg" alt="">
-                            <div style="border-radius: 0 6px 0 0;"
-                                class="d-flex flex-column align-items-start pt-2 pe-3 bg-white rounded-top-right-1 position-absolute start-0 bottom-0">
-                                <h5 class="fs-6 fw-600 text-black">Skadar</h5>
-                                <p class="fs-7 fw-500 text-gray">Montenegro</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex d-sm-none justify-content-center mt-4">
-                    <a href="#" class="fs-6 fw-600 d-flex align-items-center column-gap-2">View all <i
-                            class='bx bx-chevron-right text-primary'></i></a>
-                </div>
-            </div>
-            <img src="./img/svgs/plus.svg" class="plusAnimation position-absolute d-none d-sm-block" alt="">
-            <img src="./img/svgs/greenCircle.svg" class="small-circle position-absolute d-sm-block d-none" alt="">
-        </section>
-
-        <!--=============== Thousand ===============-->
-        <section class="thousand my-5 py-xl-4">
-            <div class="container">
-                <div class="row row-gap-4">
-                    <div class="col-xl-5 col-lg-6 order-1 order-lg-0">
-                        <div
-                            class="d-flex flex-column align-items-sm-start align-items-center justify-content-center h-100">
-                            <h5 class="secondary-font title-color fs-1 fw-bold">Guides by Thousand
-                                Sunny</h5>
-                            <p
-                                class="thirdy-font fw-light fs-6 text-gray text-center text-sm-start mt-3 pt-1 mb-4 pb-3">
-                                Packed with tips and
-                                advice from our on-the-ground
-                                experts, our city guides app
-                                (iOS and Android) is the ultimate resource before and during a trip.</p>
-                            <a href="bootstrap-5.3.3-dist.zip" download
-                                class="btn btn-primary text-primary hvr-radial-out fw-600 fs-6 bg-transparent px-4">Download</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-1 d-none d-xl-block"></div>
-                    <div class="col-lg-6 order-0">
-                        <div class="d-flex">
-                            <img src="./img/thousand.png" class="w-100" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== Testimonial ===============-->
-        <section class="testimonial my-5 py-xl-4">
-            <div class="container">
-                <h4 class="secondary-font fw-bold fs-1 text-sm-start text-center mb-5">Testimonials</h4>
-                <div class="row row-gap-4">
-                    <div class="col-xl-5 col-lg-6 col-md-6">
-                        <div
-                            class="d-flex flex-column align-items-sm-start align-items-center justify-content-center h-100">
-                            <div class="d-flex column-gap-2">
-                                <i class='bx bxs-star bx-sm text-warning'></i>
-                                <i class='bx bxs-star bx-sm text-warning'></i>
-                                <i class='bx bxs-star bx-sm text-warning'></i>
-                                <i class='bx bxs-star bx-sm text-warning'></i>
-                                <i class='bx bxs-star bx-sm text-warning'></i>
-                            </div>
-                            <p class="thirdy-font fs-4 fw-normal text-black text-center text-sm-start my-lg-5 my-4">
-                                “Quisque in lacus a urna
-                                fermentum
-                                euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
-                                sit amet turpis nec”
+                <div class="row d-flex justify-content-center mt-5 pt-3 row-gap-3">
+                    <div class="col-xxl-4 col-xl-6">
+                        <div class="d-flex flex-column align-items-center">
+                            <h4 class="fw-600 fs-2 text-white d-flex column-gap-2"><img src="img/creator-1.png"
+                                    alt="">Reduced Anxiety</h4>
+                            <p class="text-grey fw-normal fs-4 text-center">Never worry about losing your audience.
                             </p>
-                            <h4 class="fw-bold fs-22px text-black mb-1">Edward Newgate</h4>
-                            <p class="fw-normal text-black fs-18px">Founder Circle</p>
                         </div>
                     </div>
-                    <div class="col-xl-2 d-none d-xl-block"></div>
-                    <div class="col-xl-5 col-lg-6 col-md-6">
-                        <div class="d-flex position-relative">
-                            <div class="swiper position-relative testimonialSwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="d-flex object-fit-contain">
-                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex">
-                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex">
-                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex">
-                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="d-flex">
-                                            <img src="img/testimonial-1.png" class="w-100 h-100" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div style="border-radius: 16px 0 0 0;width: 132px; height: 60px;"
-                                    class="d-flex z-1 align-items-center justify-content-center bg-white rounded-top-right-1 position-absolute end-0 bottom-0">
-                                    <div class="swiper-button-next" style="top: 38px;">
-                                        <i class='bx bx-chevron-right'></i>
-                                    </div>
-                                    <div class="swiper-button-prev" style="top: 38px; left: 38px;">
-                                        <i class='bx bx-chevron-left'></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="./img/svgs/greenCircle.svg"
-                                class="big-circle position-absolute d-lg-block d-none z-n1" alt="">
-                            <img src="./img/svgs/plus.svg" class="plusAnimation z-1 position-absolute d-none d-lg-block"
-                                alt="">
+                    <div class="col-xxl-4 col-xl-6">
+                        <div class="d-flex flex-column align-items-center">
+                            <h4 class="fw-600 fs-2 text-white d-flex column-gap-2"><img src="img/creator-2.png"
+                                    alt="">Lower Workload</h4>
+                            <p class="text-grey fw-normal fs-4 text-center ">Just share one link. We'll handle the rest.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 ">
+                        <div class="d-flex flex-column align-items-center">
+                            <h4 class="fw-600 fs-2 text-white d-flex column-gap-2 text-center"><img
+                                    src="img/creator-3.png" alt="">More Time</h4>
+                            <p class="text-grey fw-normal fs-4 text-center">Spend less time on marketing tools</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--=============== Stories ===============-->
-        <section class="stories my-5 py-xl-4">
+        <section class="step mt-5 pt-5">
             <div class="container">
-                <div class="d-flex align-items-center justify-content-sm-between justify-content-center mb-5 pb-xl-3">
-                    <h5 class="fw-bold title-color secondary-font fs-1">Trending stories</h5>
-                    <a href="#" class="fs-6 fw-600 d-flex align-items-center column-gap-2 d-none d-sm-block">View all <i
-                            class="bx bx-chevron-right text-primary"></i></a>
+                <div class="d-flex justify-content-center flex-column">
+                    <h4 class="fw-600 fs-4 text-primary text-center">STEP 1</h4>
+                    <h4 class=" connet fw-600 fs-8 text-white text-center">Connect Your Content</h4>
+                    <p class="fw-normal fs-3 text-secondary text-center">Bring all of your content together and get a
+                        Homepage that <br>
+                        automatically updates whenever you create anywhere online.
+                    </p>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="btn btn-secondary hvr-secondary text-secondary py-4 px-4 bg-dark">View Avaliable
+                            Sources</button>
+                    </div>
                 </div>
-                <div class="row row-gap-4">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
-                            <div class="d-flex w-100 mb-3">
-                                <img src="img/stories-1.png" class="w-100" alt="">
+            </div>
+        </section>
+
+        <section class="py-5 px-">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-between row-gap-3">
+                    <div class="col-xxl-5 col-xl-6">
+                        <div class="spot-boxxer d-flex align-items-center flex-column">
+                            <h4 class="text-white fw-500 fs-3">Your Homepage</h4>
+                            <div class="d-flex flex-column mt-5 pt-4">
+                                <h4 class="spot-title text-white fw-600 fs-8">Your Content.</h4>
+                                <h4 class="text-white spot-title fw-600 fs-8">All in <span
+                                        class="spot-title text-primary fw-600 fs-8">One Spot</span></h4>
                             </div>
-                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">The many benefits of
-                                taking a healing holiday</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">‘Helaing holidays’
-                                are on the rise
-                                tohelp maximise your health and happines...</p>
-                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
+                            <div class="d-flex flex-column mt-4 row-gap-2">
+                                <p class="spot-text fw-normal fs-4 text-white d-flex column-gap-3"><img
+                                        src="img/svgs/spot-1.svg" alt="#!">Bring all of your content together into one
+                                    homepage.</p>
+                                <p class="spot-text fw-normal fs-4 text-white d-flex column-gap-3"><img
+                                        src="img/svgs/spot-2.svg" alt="#!">Your page automatically updates whenever you
+                                    create.</p>
+                            </div>
+                            <div class="d-flex mt-5 pt-3 column-gap-4 spot-btn">
+                                <button class="btn btn-primary hvr-primary fw-500 fs-5 py-3 px-4">Get Started
+                                    Now</button>
+                                <button class="btn btn-secondary hvr-secondary fw-500 fs-5 py-3 px-4">View A
+                                    Demo</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
-                            <div class="d-flex w-100 mb-3">
-                                <img src="img/stories-2.png" class="w-100" alt="">
-                            </div>
-                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">The best Kyoto restaurant
-                                to try Japanese food</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">From tofu to
-                                teahouses, here’s our guide to Kyoto’s best restaurants
-                                to visit...</p>
-                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
-                            <div class="d-flex w-100 mb-3">
-                                <img src="img/stories-3.png" class="w-100" alt="">
-                            </div>
-                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">Skip Chichen Itza and head
-                                to this remote Yucatan</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">It’s remote and
-                                challenging to get,
-                                but braving the jungle and exploring
-                                these ruins without the...</p>
-                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="d-flex flex-column align-items-sm-start align-items-center h-100">
-                            <div class="d-flex w-100 mb-3">
-                                <img src="img/stories-4.png" class="w-100" alt="">
-                            </div>
-                            <h5 class="fw-bold fs-5 text-center text-sm-start title-color">Surf’s up at these beginner
-                                spots around the world</h5>
-                            <p class="fw-normal fs-6 text-gray mt-2 mb-3 text-center text-sm-start">If learning to surf
-                                has in on your to-
-                                do list for a while, the good news
-                                is: it’s never too late...</p>
-                            <a href="#" class="text-primary fs-6 fw-600 mt-auto">Read more</a>
+                    <div class="col-xxl-5 col-xl-6">
+                        <div class="d-flex align-items-center">
+                            <img class="w-100" src="img/spot-img.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="py-5 px-2">
+            <div class="container">
+                <div class="d-flex w-100 flex-column">
+                    <div class=" w-100 flex-column align-items-center">
+                        <h3 class="fw-600 fs-4 text-primary text-center">STEP2</h3>
+                        <h4 class=" spotify-title fw-600 fs-8 text-white text-center">Share Your Homepage</h4>
+                        <p class="fw-normal fs-2 text-secondary text-center">Share your Wavium homepage link with your
+                            followers, and <br>
+                            we'll handle the rest.
+                        </p>
+                    </div>
+                    <div class="row d-flex justify-content-center row-gap-4">
+                        <div class="col-xxl-5 col-xl-7">
+                            <div class="link-wrap">
+                                <a class="link-a" href="">One Link</a>
+                                <h4 class="spotify-text fw-600 fs-10 text-third mt-3">ALL You Create. <span
+                                        class="spotify-text fw-600 fs-10 text-white">One Link</span></h4>
+                                <div class=" d-xxl-flex d-none positon-relative"><img class="mobile"
+                                        src="img/spotify-,obile.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-5 col-xl-7">
+                            <div class="link-wraper">
+                                <a class="link-a" href="">Collect Subscribers</a>
+                                <h4 class="spotify-text fw-bold fs-10 text-third mt-5 pt-5 ">Emails. <br>
+                                    Phone #s. <br>
+                                    <span class="spotify-text fw-bold fs-10 text-white">All Yours.</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5 pt-2">
+                    <button class="btn btn-primary hvr-primary fw-500 fs-5 py-4 px-5">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5 px-">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-between row-gap-3">
+                    <div class="d-flex flex-column mb-5">
+                        <h4 class="text-primary fw-500 fs-4 text-center">STEP 3</h4>
+                        <h4 class="black-title fw-500 fs-8 text-white text-center">Send Emails & Text Messages</h4>
+                        <p class="black-text fw-normal fs-2 text-secondary text-center">No more going through a social
+                            platform. Reach and engage <br>
+                            your audience directly over email and text massage.
+                        </p>
+                    </div>
+                    <div class="col-xxl-5 col-xl-6">
+                        <div class="spot-boxxer d-flex align-items-center flex-column">
+                            <h4 class="text-white fw-500 fs-3">Create & Share</h4>
+                            <div class="d-flex flex-column mt-5 pt-4">
+                                <h4 class="spot-title text-white fw-600 fs-8 text-center">Reach Your</h4>
+                                <h4 class="text-white spot-title fw-600 fs-8 text-center">Audience <span
+                                        class="spot-title text-primary fw-600 fs-8">Directly.</span></h4>
+                            </div>
+                            <div class="d-flex flex-column mt-4 row-gap-2">
+                                <p class="spot-text fw-normal fs-4 text-white d-flex column-gap-3"><img
+                                        src="img/svgs/spot-1.svg" alt="#!">Embed content or create something new to
+                                    share.</p>
+                                <p class="spot-text fw-normal fs-4 text-white d-flex column-gap-3"><img
+                                        src="img/svgs/spot-2.svg" alt="#!">Share content over email, text message or
+                                    your homepage.</p>
+                            </div>
+                            <div class="d-flex mt-5 pt-3 column-gap-4 spot-btn">
+                                <button class="btn btn-primary hvr-primary fw-500 fs-5 py-3 px-4">Get Started
+                                    Now</button>
+                                <button class="btn btn-secondary hvr-secondary fw-500 fs-5 py-3 px-4">View A
+                                    Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-5 col-xl-6">
+                        <div class="d-flex align-items-center">
+                            <img class="w-100" src="img/black-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 pt-5">
+            <div class="">
+                <h4 class="expert fw-600 fs-8 text-white text-center mb-5">Experts Agree</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img class="w-100" src="img/experts.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="mt-5 pt-5">
+            <div class="help d-flex align-items-center justify-content-center">
+                <h4 class="helped fw-600 fs-10 text-white text-center  d-flex align-">We've helped over 1,000 creatorsre
+                    <br>
+                    claim control of their audience.
+                </h4>
+            </div>
+
         </section>
     </main>
 
     <!--=============== Footer ===============-->
-    <footer class="footer">
+    <footer class="footer mt-5 pt-5">
         <div class="container">
-            <div
-                class="d-flex align-items-center justify-content-between flex-wrap row-gap-4 column-gap-3 column-gap-sm-0">
-                <div class="d-flex flex-column align-items-start">
-                    <a href="#" class="text-primary fw-bold fs-4 d-flex align-items-center"><img
-                            src="./img/svgs/site-logo.svg" class="me-2" alt="">Tour</a>
-                    <p style="max-width: 391px; width: 100%;"
-                        class="fs-18px thirdy-font fw-light footer-text-color mb-5 pb-xl-2 pt-xl-3 pt-2 mt-3">Plan and
-                        book your perfect trip with
-                        expert advice, travel tips destination
-                        information from us</p>
-                    <p class="footer-text-color thirdy-font fs-6 fw-light">©2024 Thousand Sunny. All rights reserved</p>
+            <div class="d-flex align-items-center flex-column">
+                <div class="">
+                    <img src="img/big-logo.png" alt="">
                 </div>
-                <div class="d-flex flex-column">
-                    <h5 class="fs-5 fw-bold text-black mb-4 thirdy-font">Destinations</h5>
-                    <ul class="d-flex flex-column row-gap-2">
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Africa</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Antarctica</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Asia</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Europa</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">America</a></li>
-                    </ul>
+                <h4 class="start fs-11 fw-bold text-white text-center mt-4 mb-3">Get Started Now</h4>
+                <p class="take fw-normal display-6 text-white text-center">Setup is easy and takes under 5 minutes.</p>
+                <div class="">
+                    <button class="btm btn btn-primary fs-2 fw-600 text-white py-4 px-5 hvr-primary mt-3 mb-3">Get
+                        Started Now</button>
                 </div>
-                <div class="d-flex flex-column">
-                    <h5 class="fs-5 fw-bold text-black mb-4 thirdy-font">Shop</h5>
-                    <ul class="d-flex flex-column row-gap-2">
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Destination Guides</a>
-                        </li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Pictorial & Gifts</a>
-                        </li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Special Offers</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Delivery Times</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="d-flex flex-column">
-                    <h5 class="fs-5 fw-bold text-black mb-4 thirdy-font">Interests</h5>
-                    <ul class="d-flex flex-column row-gap-2">
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Adventure Travel</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Art And Culture</a></li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Wildlife And Nature</a>
-                        </li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">EFamily Holidaysuropa</a>
-                        </li>
-                        <li><a href="#" class="fw-light fs-18px thirdy-font footer-text-color">Food And Drink</a></li>
-                    </ul>
+                <div class="d-flex align-items-center">
+                    <img src="./img/svgs/green-dot.svg" alt="">
+                    <p class="sub d-flex align-items-center fw-normal fs-1 text-secondary"><span
+                            class="sub fs-1 text-white mx-2 fw-bold">1000+</span> creators have already started
+                    </p>
                 </div>
             </div>
-            <hr>
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="d-flex align-items-center column-gap-3">
-                    <a href="#"><img src="img/svgs/social-logo-1.svg" alt=""></a>
-                    <a href="#"><img src="img/svgs/social-logo-2.svg" alt=""></a>
-                    <a href="#"><img src="img/svgs/social-logo-3.svg" alt=""></a>
-                    <a href="#"><img src="img/svgs/social-logo-4.svg" alt=""></a>
-                    <a href="#"><img src="img/svgs/social-logo-5.svg" alt=""></a>
+
+
+            <nav class="py-4">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex flex-column">
+                            <a href="#" class="site-logo"><img src="./img/svgs/site-logo.svg" alt=""></a>
+                            <a class="fw-normal fs-3 text-secondary" href="">info@marico.com</a>
+                        </div>
+                        <ul class="d-lg-flex d-none  align-items-center  column-gap-3">
+                            <li><a class="text-secondary transition primary-hover fs-5" href="#">About</a></li>
+                            <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">Pricing</a></li>
+                            <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">Blog</a></li>
+                            <li><a class="text-secondary fw-500 transition primary-hover fs-5" href="#">Sign in</a></li>
+                        </ul>
+                        <button class="btn btn-primary d-lg-none d-flex" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                                class='bx bx-menu-alt-left bx-sm text-primary'></i></button>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </footer>
 
